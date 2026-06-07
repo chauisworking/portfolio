@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Marketing & Marketing Analytics Portfolio</title>
+  <meta name="description" content="Portfolio of a Performance Marketing & Analytics Specialist with 3+ years of experience driving growth, tracking implementation, and reporting automation.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Subtle cursor-following background glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Google Tag Manager Simulation Console Widget -->
+  <div class="console-widget" id="console-widget">
+    <button class="console-trigger" id="console-trigger" id-tag="console_trigger">
+      <span class="console-trigger-dot"></span>
+      dataLayer: Active (GTM Preview)
+    </button>
+    <div class="console-window" id="console-window">
+      <div class="console-header">
+        <div class="console-title-row">
+          <span class="console-title">GTM-MKTGPORT</span>
+          <span class="console-badge">Preview Mode</span>
+        </div>
+        <div class="console-controls">
+          <button class="console-btn" id="console-clear" title="Clear Console Logs" aria-label="Clear Console Logs">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2M10 11v6M14 11v6"/>
+            </svg>
+          </button>
+          <button class="console-btn" id="console-download" title="Export dataLayer JSON" aria-label="Export Logs">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </button>
+          <button class="console-btn" id="console-close" title="Minimize Panel" aria-label="Minimize Panel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 12H6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="console-body" id="console-body">
+        <!-- Log entries populated here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <span style="color: var(--text-primary);">Chau</span>
+        <span style="color: #9a7e56; margin-left: 0.15rem;">Tran</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#" id="nav-link-home">Home</a></li>
+          <li><a href="#experience" id="nav-link-experience">Portfolio</a></li>
+          <li><a href="#tech" id="nav-link-tech">Skills</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Icon initialized by JS -->
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <!-- Left Text Column -->
+      <div class="hero-content-left">
+        <div class="hero-pill-badge">
+          👋 Hello, I'm
+        </div>
+        <h1 class="hero-name-heading">Tran Xuan Thao Chau</h1>
+        <h2 class="hero-job-subheading">Digital Marketing Executive</h2>
+        
+        <div class="hero-desc-card">
+          <p>Strategic and tech-savvy digital marketer with a strong foundation in cross-platform planning, data-driven decision making, and marketing automation. Skilled in translating business objectives into high-impact campaigns through integrated media strategies, advanced audience insights, and AI-powered tools. Passionate about driving meaningful growth through collaboration, innovation, and performance-focused execution.</p>
+        </div>
+
+        <div class="hero-action-buttons">
+          <a href="mailto:tranxuanthaochau@gmail.com" class="btn btn-primary btn-lets-connect" id="hero-cta-connect">
+            Let's Connect
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow-svg">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chauisworking/" target="_blank" rel="noopener noreferrer" class="btn-circle-social" id="hero-social-linkedin" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:tranxuanthaochau@gmail.com" class="btn-circle-social" id="hero-social-email" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Avatar Column -->
+      <div class="hero-image-right">
+        <div class="avatar-ring-outer">
+          <div class="avatar-ring-inner">
+            <img src="profile.jpg" alt="Tran Xuan Thao Chau" class="hero-split-avatar">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-value">3+ Years</div>
+          <div class="stat-label">
+            <svg class="stat-icon" data-lucide="trending-up"></svg>Performance Marketing &amp; Analytics
+          </div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">Multi-Channel Acquisition</div>
+          <div class="stat-label">
+            <svg class="stat-icon" data-lucide="globe"></svg>Google • Meta • TikTok • Bing
+          </div>
+        </div>
+        
+        <div class="stat-card reveal">
+          <div class="stat-value">Automation &amp; Analytics</div>
+          <div class="stat-label">
+            <svg class="stat-icon" data-lucide="database"></svg>SQL • BigQuery • Looker Studio
+          </div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">Meta Certified</div>
+          <div class="stat-label">
+            <svg class="stat-icon" data-lucide="award"></svg>Media Buying Professional
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="subtle-bg reveal">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left Column: Bio Text -->
+        <div class="about-content">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">I enjoy solving marketing problems with data.</h2>
+          <p>Over the past <strong>3+ years</strong>, I've worked across <strong>performance marketing, analytics, tracking, and automation</strong>, helping brands understand not just what happened, but <strong>why it happened and what to do next</strong>.</p>
+          <p>My experience spans media buying, attribution, reporting, CRM integrations, and marketing operations across industries including legal services, automotive, gamification apps, retail, and e-commerce. I’m particularly interested in the <strong>systems behind marketing performance</strong>: how data flows, how conversions are measured, and how <strong>automation can eliminate manual work</strong>.</p>
+          <p>I value <strong>honesty, analytical thinking, and a test-and-learn mindset</strong>. I believe effective marketing is about delivering the right message to the right audience at the right time, then continuously refining the process through <strong>data, experimentation, and customer insights</strong>.</p>
+          <p>That's why I'm constantly exploring new ways to combine <strong>marketing strategy, analytics, and technology</strong> to drive <strong>measurable business growth</strong>.</p>
+        </div>
+
+        <!-- Right Column: Interactive Tech Stack Card -->
+        <div class="about-visual-container">
+          <div class="about-glow-blob"></div>
+          <div class="analytics-card">
+            <div class="analytics-card-header">
+              <div class="analytics-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="analytics-title">marketing-stack.json</div>
+            </div>
+            <div class="analytics-card-body">
+              <div class="skills-chips-wrapper">
+                <a href="#tech" class="skill-chip" data-skill="Google Ads">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                  Google Ads
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="Meta Ads">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg>
+                  Meta Ads
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="TikTok Ads">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                  TikTok Ads
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="GA4">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                  GA4
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="GTM">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+                  GTM
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="BigQuery">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  BigQuery
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="SQL">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+                  SQL
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="HubSpot">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/></svg>
+                  HubSpot
+                </a>
+                <a href="#tech" class="skill-chip" data-skill="Looker Studio">
+                  <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                  Looker Studio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating background items with subtle drift animations -->
+          <div class="floating-item float-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          </div>
+          <div class="floating-item float-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <div class="floating-item float-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="floating-item float-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Expertise Section -->
+  <section id="expertise" class="reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Expertise</span>
+        <h2 class="section-title">Comprehensive growth & data-infrastructure engineering capabilities</h2>
+      </div>
+
+      <div class="expertise-grid">
+        <!-- Card 1 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Performance Marketing Strategy & Execution</h3>
+          <p>Planning, launching, and optimizing high-budget campaigns across Google Ads, Meta Ads, TikTok Ads, and customer retention (CRM) channels to hit CAC/CPA milestones.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Marketing Analytics & Attribution</h3>
+          <p>Advanced GTM configurations, GA4 serverside tagging, custom Microsoft Clarity tracking, conversion API (CAPI) integrations, and attribution integrity validation.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+          </div>
+          <h3>Data Analysis & Optimization</h3>
+          <p>Designing cohort segments, setting up rigid A/B creative testing frameworks, scaling media spends dynamically, and extracting trends using raw analytical logic.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Customer Journey & Audience Strategy</h3>
+          <p>Defining ICP (Ideal Customer Profile) segments, identifying behavioral hurdles in checkout funnels, mapping conversion maps, and formulating precise targeting profiles.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Marketing Automation & AI Adoption</h3>
+          <p>Configuring automatic lead captures, leveraging LLMs for fast reporting scripts, structuring clean data feeds, and cutting manual execution timelines down.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="expertise-card reveal">
+          <div class="expertise-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M212 12A10 10 0 1 0 12 22a10 10 0 0 0 10-10Z"/><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+          </div>
+          <h3>Reporting & Data Visualization</h3>
+          <p>Building automated cross-channel marketing reports in Looker Studio, writing BigQuery SQL transformation scripts, and structuring custom spreadsheet templates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Projects Section -->
+  <section id="projects" class="reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Case Studies</span>
+        <h2 class="section-title">Featured Growth Campaigns</h2>
+        <p>A collection of key case studies detailing lead generation scaling, customer retention mechanics, and analytics frameworks.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 00 -->
+        <div class="project-card reveal" data-project-id="project_00">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="briefcase"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Legal Services | Lead Gen</span>
+              <span class="project-period">2025</span>
+            </div>
+          </div>
+          <h3 class="project-title">Paraquat Litigation Campaign</h3>
+          <p class="project-impact">Generated qualified Paraquat litigation leads with the lowest Cost Per Deal ($2,096) across multiple paid media channels for Tosi Law.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">Meta Ads</span>
+            <span class="project-tag-badge">Google Ads</span>
+            <span class="project-tag-badge">TikTok Ads</span>
+            <span class="project-tag-badge">Bing Ads</span>
+          </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">$2,096</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Cost Per Deal</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">44</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Signed Deals</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">615</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Leads Generated</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 06 -->
+        <div class="project-card reveal" data-project-id="project_06">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Gamification | Customer Retention | SME Ecosystem</span>
+              <span class="project-period">2025</span>
+            </div>
+          </div>
+          <h3 class="project-title">Marketing Attribution &amp; User Journey Analytics Dashboard</h3>
+          <p class="project-impact">Unified attribution dashboard reduced reporting time by 70% and identified high‑quality user segments.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">BigQuery</span>
+            <span class="project-tag-badge">SQL</span>
+            <span class="project-tag-badge">Looker Studio</span>
+            <span class="project-tag-badge">AppsFlyer</span>
+            <span class="project-tag-badge">Marketing Analytics</span>
+            <span class="project-tag-badge">Automation</span>
+            <span class="project-tag-badge">Data Visualization</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 07 -->
+        <div class="project-card reveal highlight" data-project-id="project_07">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="briefcase"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Legal Services | Class Action Litigation | Lead Generation</span>
+              <span class="project-period">2025 – 2026</span>
+            </div>
+          </div>
+          <h3 class="project-title">Lead Tracking & Attribution Operations</h3>
+          <p class="project-impact">Improved lead tracking accuracy and attribution across multi-channel campaigns, reducing wasted spend and increasing qualified leads.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">GA4</span>
+            <span class="project-tag-badge">Google Tag Manager</span>
+            <span class="project-tag-badge">HubSpot</span>
+            <span class="project-tag-badge">Lead Docket</span>
+            <span class="project-tag-badge">CallRail</span>
+            <span class="project-tag-badge">Unbounce</span>
+            <span class="project-tag-badge">Enhanced Conversions</span>
+            <span class="project-tag-badge">Attribution</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 01 -->
+        <div class="project-card reveal" data-project-id="project_01">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="car"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Automotive</span>
+              <span class="project-period">Apr 2024 – Jul 2025</span>
+            </div>
+          </div>
+          <h3 class="project-title">Suzuki Jimny Lead Generation Campaign</h3>
+          <p class="project-impact">Achieved 100% qualified lead KPI while maintaining the highest agency performance fee tier.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">Lead Gen</span>
+            <span class="project-tag-badge">Meta Ads</span>
+            <span class="project-tag-badge">Google Ads</span>
+            <span class="project-tag-badge">Automation</span>
+          </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">100%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">KPI Target</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">45.37%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Lead Quality</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">Tier 1</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Fee Tier</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-card reveal" data-project-id="project_02">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="gem"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Luxury Jewelry</span>
+              <span class="project-period">Q4 2023 – Q1 2024</span>
+            </div>
+          </div>
+          <h3 class="project-title">Finifer Jewelry Acquisition & Retention</h3>
+          <p class="project-impact">Generated 2.8B VND revenue through CDP-driven retention and personalized customer activation.</p>
+          <div class="project-tags">
+              <span class="project-tag-badge">E-commerce</span>
+              <span class="project-tag-badge">CDP / CRM</span>
+              <span class="project-tag-badge">Retention</span>
+              <span class="project-tag-badge">SMS Automation</span>
+              <span class="project-tag-badge">TikTok Ads</span>
+            </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">4.0x</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Facebook ROAS</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">+15%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Conversion Lift</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">2.8B</span>
+              <span class="project-card-metrics-preview-label card-metric-label">SMS Revenue</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="project-card reveal" data-project-id="project_03">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Automotive</span>
+              <span class="project-period">Aug 2024 – Dec 2024</span>
+            </div>
+          </div>
+          <h3 class="project-title">Suzuki XL7 Hybrid Launch Campaign</h3>
+          <p class="project-impact">Exceeded reach KPI by 112% while maintaining a 51.60% qualified lead rate.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">Launch</span>
+            <span class="project-tag-badge">Lead Gen</span>
+            <span class="project-tag-badge">Hybrid</span>
+          </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">112%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Reach KPI</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">12.3x</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Engagement</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">51.60%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Lead Quality</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="project-card reveal" data-project-id="project_04">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="shirt"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Fashion</span>
+              <span class="project-period">May 2024 – Mar 2025</span>
+            </div>
+          </div>
+          <h3 class="project-title">Jaspal Group Fashion Portfolio Campaign</h3>
+          <p class="project-impact">Managed awareness campaigns across 7 fashion brands while achieving all monthly KPI targets.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">Multi-brand</span>
+            <span class="project-tag-badge">Awareness</span>
+            <span class="project-tag-badge">Retail</span>
+          </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">100%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">KPI Target</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">+20%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Page Growth</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">7 Brands</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Managed</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 05 -->
+        <div class="project-card reveal" data-project-id="project_05">
+          <div class="project-card-header">
+            <div class="project-category-icon-wrapper">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="project-header-meta">
+              <span class="project-industry">Education & Retail</span>
+              <span class="project-period">May 2024 – Jul 2025</span>
+            </div>
+          </div>
+          <h3 class="project-title">MyKingdom Digital Awareness Campaign</h3>
+          <p class="project-impact">Reached over 500K users monthly while coordinating 30+ KOC collaborations.</p>
+          <div class="project-tags">
+            <span class="project-tag-badge">KOC</span>
+            <span class="project-tag-badge">Awareness</span>
+            <span class="project-tag-badge">Paid Social</span>
+          </div>
+          <div class="project-card-metrics">
+            <div class="card-metric-box">
+              <span class="card-metric-value">500K+</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Reach / Mo</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">+40%</span>
+              <span class="project-card-metrics-preview-label card-metric-label">Engagement</span>
+            </div>
+            <div class="card-metric-box">
+              <span class="card-metric-value">30+</span>
+              <span class="project-card-metrics-preview-label card-metric-label">KOCs Led</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="view-case-study-cta">
+              View Case Study
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Screen Case Study Reader Modal -->
+  <div class="case-study-modal" id="case-study-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body" id="modal-body">
+        <!-- Populated Dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Professional Timeline</span>
+        <h2 class="section-title">Career Milestones & Performance Campaigns</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1: BACKTOBACK Agency -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role-comp">
+                <span class="timeline-role">Performance Executive</span>
+                <span class="timeline-company">BACKTOBACK Agency</span>
+              </div>
+              <span class="timeline-date">Jul 2025 – Present</span>
+            </div>
+            <ul class="timeline-highlights collapsed">
+              <li>Managed Google Ads, Meta Ads, TikTok Ads, and Microsoft Ads campaigns.</li>
+              <li>Implemented GTM tracking and HubSpot workflows.</li>
+              <li>Built automated BigQuery and Looker Studio reporting solutions.</li>
+              <li>Conducted market research and competitor analysis.</li>
+              <li>Consulted clients on growth strategy and performance optimization.</li>
+              <li>Collaborated with content and UX teams on creative strategy.</li>
+            </ul>
+            <button class="timeline-toggle-details">
+              <span>Show Highlights</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 2: i-dac Vietnam -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role-comp">
+                <span class="timeline-role">Account Planner Executive</span>
+                <span class="timeline-company">i-dac Vietnam (Hakuhodo DY ONE Group)</span>
+              </div>
+              <span class="timeline-date">May 2024 – Jul 2025</span>
+            </div>
+            <ul class="timeline-highlights collapsed">
+              <li>Managed multi-channel campaign execution and optimization.</li>
+              <li>Conducted market and performance analysis.</li>
+              <li>Developed strategic recommendations and brand positioning plans.</li>
+              <li>Introduced automation solutions and reporting systems.</li>
+              <li>Managed 30+ KOL and KOC partnerships.</li>
+            </ul>
+            <button class="timeline-toggle-details">
+              <span>Show Highlights</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 3: ANTS Digital Agency -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role-comp">
+                <span class="timeline-role">Account Planner Executive</span>
+                <span class="timeline-company">ANTS Digital Agency</span>
+              </div>
+              <span class="timeline-date">Mar 2023 – Apr 2024</span>
+            </div>
+            <ul class="timeline-highlights collapsed">
+              <li>Planned and executed performance campaigns.</li>
+              <li>Built audience personas and customer journeys.</li>
+              <li>Developed retention strategies using RFM segmentation.</li>
+              <li>Conducted market research and client consulting.</li>
+            </ul>
+            <button class="timeline-toggle-details">
+              <span>Show Highlights</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 4: Central Retail Vietnam -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role-comp">
+                <span class="timeline-role">Marketing Trainee</span>
+                <span class="timeline-company">Central Retail Vietnam</span>
+              </div>
+              <span class="timeline-date">Aug 2022 – Feb 2023</span>
+            </div>
+            <ul class="timeline-highlights collapsed">
+              <li>Managed POSM deployment across 57 stores.</li>
+              <li>Supported commercial calendar planning.</li>
+              <li>Coordinated stakeholders across departments.</li>
+              <li>Developed social media content plans.</li>
+            </ul>
+            <button class="timeline-toggle-details">
+              <span>Show Highlights</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Item 5: Mobile World Investment Corporation -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role-comp">
+                <span class="timeline-role">SEO Intern</span>
+                <span class="timeline-company">Mobile World Investment Corporation</span>
+              </div>
+              <span class="timeline-date">Apr 2022 – Aug 2022</span>
+            </div>
+            <ul class="timeline-highlights collapsed">
+              <li>Created 100+ SEO content outlines.</li>
+              <li>Conducted keyword research using Ahrefs.</li>
+              <li>Produced social media content.</li>
+            </ul>
+            <button class="timeline-toggle-details">
+              <span>Show Highlights</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Technologies Section -->
+  <section id="tech" class="subtle-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Stack</span>
+        <h2 class="section-title">Tools & Infrastructure I Leverage Daily</h2>
+      </div>
+
+      <div class="tech-container">
+        <!-- Advertising Category -->
+        <div class="tech-category reveal">
+          <h3 class="tech-category-title">Advertising Channels</h3>
+          <div class="badge-cloud">
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Google Ads</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Meta Ads</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>TikTok Ads</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Microsoft Ads</div>
+          </div>
+        </div>
+
+        <!-- Analytics Category -->
+        <div class="tech-category reveal">
+          <h3 class="tech-category-title">Tracking & Measurement</h3>
+          <div class="badge-cloud">
+            <div class="tech-badge"><span class="tech-badge-dot"></span>GA4</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Google Tag Manager</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Microsoft Clarity</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Looker Studio</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>BigQuery</div>
+          </div>
+        </div>
+
+        <!-- Data Category -->
+        <div class="tech-category reveal">
+          <h3 class="tech-category-title">Data Analysis</h3>
+          <div class="badge-cloud">
+            <div class="tech-badge"><span class="tech-badge-dot"></span>SQL</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Google Sheets</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Excel</div>
+          </div>
+        </div>
+
+        <!-- Automation Category -->
+        <div class="tech-category reveal">
+          <h3 class="tech-category-title">Automation & AI</h3>
+          <div class="badge-cloud">
+            <div class="tech-badge"><span class="tech-badge-dot"></span>ChatGPT</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Claude</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>Gemini</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>HubSpot</div>
+            <div class="tech-badge"><span class="tech-badge-dot"></span>AI Workflows</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications, Languages & Badges Split Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="split-grid">
+        <!-- Certifications -->
+        <div>
+          <span class="section-tag">Accreditations</span>
+          <h2 class="section-title" style="margin-bottom: 2rem;">Professional Certifications</h2>
+          
+          <div class="cert-card reveal">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="cert-details">
+              <h4>Meta Certified Media Buying Professional</h4>
+              <p>Meta Blueprint Certification validating expert level campaign structures & buying strategy.</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="cert-details">
+              <h4>IC3 Digital Literacy Certification</h4>
+              <p>Universal validation of essential computer, networking, and digital workstation workflows.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div>
+          <span class="section-tag">Global Readiness</span>
+          <h2 class="section-title" style="margin-bottom: 2rem;">Languages</h2>
+          
+          <div class="lang-card reveal">
+            <ul class="summary-list">
+              <li class="summary-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent); width: 18px; height: 18px; margin-top: 0.15rem; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>English:</strong> Full Professional Proficiency (TOEIC 865/990)</span>
+              </li>
+              <li class="summary-item" style="margin-top: 1.25rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent); width: 18px; height: 18px; margin-top: 0.15rem; flex-shrink: 0;"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Vietnamese:</strong> Native / Bilingual Proficiency</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-quote">
+        "Data-driven marketing. Continuous experimentation. Measurable growth."
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Chau Tran. All rights reserved. Managed & verified with Google Tag Manager.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
